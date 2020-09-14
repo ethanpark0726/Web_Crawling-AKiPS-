@@ -2,9 +2,7 @@
 AKiPS is a network monitoring tool using SNMP. Usually I need to know the specific MIB or data search syntax provided by AKiPS to get some information. Since the dashboard already displays a lot of valuable information, I thought it would be good to use web crawling to gather information dynamically.
 
 ## Main logic
-  - Reqeust a device list to AKiPS  
-  - Access to the jumpbox  
-  - Access to the device  
-  - Gather a interface list with "down" status from each device
-  - Using this interface to retrieve running-configuration (sh run int xxx) and check it has shutdown configuration
-  - Save as a xlsx file
+  - Login the AKiPS server 
+  - Navigate to events dashboard (Dashboards >> Evnets)  
+  - Access to div tag with {class:left} attribute  
+  - Gather a list of tables then access the second table (FYI, first one is Impact Assessment)  
