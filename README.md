@@ -1,5 +1,5 @@
 # Web_Crawling-AKiPS
-AKiPS is a network monitoring tool using SNMP. In order to get the data you want, there are cases where you need to know the specific MIB and retrieve the information. However, it was developed by judging that the desired information can be dynamically obtained by crawling the information already seen in the dashboard.
+AKiPS is a network monitoring tool using SNMP. Usually I need to know the specific MIB or data search syntax provided by AKiPS to get some information. Since the dashboard already displays a lot of information, I thought it would be good to use web crawling.
 
 ## Main logic
   - Reqeust a device list to AKiPS  
