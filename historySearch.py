@@ -32,8 +32,8 @@ def saveExcelFile(IP):
     wb.save(fileName)
     wb.close()
 
-driver = webdriver.Chrome('C:/Users/hpar0001/AppData/Local/Programs/Python/chromedriver.exe')
-login_url = "https://akips11.hsnet.ufl.edu"
+driver = webdriver.Chrome('C:/Users/AppData/Local/Programs/Python/chromedriver.exe')
+login_url = "Yourserver"
 
 driver.get(login_url)
 
@@ -42,7 +42,7 @@ element.clear()
 element.send_keys('admin')
 element = driver.find_element_by_name('password')
 element.clear()
-element.send_keys('1 Problem')
+element.send_keys('superSecret')
 xpath = '/html/body/div[1]/div/div[2]/form/button'
 driver.find_element_by_xpath(xpath).click()
 
@@ -52,7 +52,7 @@ ws = wb.active
 cellNumber = 1
 
 for elem in mac:
-    crawling_url = f"https://akips11.hsnet.ufl.edu/switch-port-map-reporter?mode=history;address={elem};"
+    crawling_url = f"https://yourServer/switch-port-map-reporter?mode=history;address={elem};"
     driver.get(crawling_url)
 
     xpath = '/html/body/table/tbody/tr[2]/td[6]'
@@ -66,8 +66,3 @@ for elem in mac:
 
     wb.save(fileName)
 wb.close()
-#saveExcelFile(IPList)
-# element = driver.find_element_by_xpath('//*[@id="address"]')
-# element.send_keys('000CCC63FE95')
-# xpath = '//*[@id="control2"]/fieldset/div[3]/div/button[3]'
-# driver.find_element_by_xpath(xpath).click()
