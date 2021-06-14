@@ -6,3 +6,9 @@ AKiPS is a network monitoring tool using SNMP. Usually I need to know the specif
   - Navigate to events dashboard (Dashboards >> Evnets)  
   - Access to div tag with {class:left} attribute  
   - Gather a list of tables then access the second table (FYI, first one is Impact Assessment)  
+
+## Update (Added Selenium Crawling logic)
+  - Login the AKiPS server
+  - Navigate to Switch Port Mapper
+  - Use specific xpath: /html/body/table/tbody/tr[2]/td[6]
+  - Gather a list of the first assigned IP address (A device might have multiple IP address assigned logs)
