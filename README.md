@@ -7,7 +7,7 @@ AKiPS is a network monitoring tool using SNMP. Usually I need to know the specif
   - Access to div tag with {class:left} attribute  
   - Gather a list of tables then access the second table (FYI, first one is Impact Assessment)  
 
-## Update - 06/14/2021 (Added Selenium Crawling logic)
+## Update - (historySearch.py) -> Used Selenium, 06/14/2021
   - Login the AKiPS server
   - Navigate to Switch Port Mapper
   - Use specific xpath: /html/body/table/tbody/tr[2]/td[6]
